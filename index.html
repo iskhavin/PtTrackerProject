@@ -1,12 +1,55 @@
 <html>
-    <h1>Track Patients</h1>
+<h1>Patient Tracker App</h1>
 <p></p>
-<p>This page will show:</p> 
+<p><b>Helps you to:</b></p> 
 <ul>
-    <li>List of active patients</li>
-    <li>Most recent visit</li>
-    <li>Next visit</li>
+    <li>Check recently completed visits</li>
+    <li>See upcoming visits</li>
+    <li>View visit checklists</li>
 </ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Patient Dashboard</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#aba;">
+    <h2>Last Visit</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Patient</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#aba;">
+    <h2>Next Visit</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+
+<h3>Patient Name Input</h3>
 <form action="/action_page.php">
   <label for="fname">First name:</label>
   <input type="text" id="fname" name="fname"><br><br>
